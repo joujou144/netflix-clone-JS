@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <title>TMDB API 100 Movie</title> 
+</head>
+<body>
+  <nav id="nav">
+    <img src="./netflix.svg" class="logo" alt="netflix-logo">
+
+    <div class="nav-menu">
+      
+      <form class="searchbar" id="form">
+        <input type="text" name="q"  class="search-input" id="search-input" placeholder="Title, people, genre">
+        <label for="search-input">
+          <i class="las la-search"></i>
+        </label>
+        <span class="search-close">
+          <i class="las la-times"></i>
+        </span>
+        <button class="search-submit" id="search-submit">Search the site</button>
+      </form>
+
+      <a href="#">Kids</a>
+      
+      <div class="avatar"><img src="./avatar.png"></div>
+    </div> 
+  </nav>
+
+  <header id="hero" class="hero">
+    <div id="hero-content" class="hero-content">
+      <h1 id="hero-title" class="hero-title"></h1>
+      <p id="hero-info" class="hero-info"></p>
+      <div class="hero-btns">
+        <button>
+          <i class="arrow las la-caret-right"></i>
+          <p>Play</p>
+        </button>
+        <button>
+          <i class="info las la-info-circle"></i>
+          <p>More Info</p>
+        </button>
+      </div>
+            
+    </div>
+    <div class="hero-fadeBottom"></div>   
+  </header>
+
+  <main>
+    <section  class="popular-list">
+      <button class="prev-btn"><i class="las la-angle-left"></i></i></button>
+      <div class="movie-row">
+        <h4 class="movie-genre">Trending Now</h4>
+        <div class="movie-container" id="popular-container"></div>
+      </div>     
+      <button class="next-btn"><i class="las la-angle-right"></i></button>
+    </section>
+
+    <section class="crime-list">
+      <button class="prev-btn"><i class="las la-angle-left"></i></button>
+      <div class="movie-row">
+        <h4 class="movie-genre">Action Crime</h4>
+        <div class="movie-container" id="crime-container"></div>
+      </div>     
+      <button class="next-btn"><i class="las la-angle-right"></i></i></button>
+    </section>
+
+    <section  class="family-list">
+      <button class="prev-btn"><i class="las la-angle-left"></i></button>
+      <div class="movie-row">
+        <h4 class="movie-genre">Kids & Family Movies</h4>
+        <div class="movie-container" id="family-container"></div>
+      </div>     
+      <button class="next-btn"><i class="las la-angle-right"></i></button>
+    </section>
+    
+    <section  class="horror-list">
+      <button class="prev-btn"><i class="las la-angle-left"></i></button>
+      <div class="movie-row">
+        <h4 class="movie-genre">Horror Films</h4>
+        <div class="movie-container" id="horror-container"></div>
+      </div>     
+      <button class="next-btn"><i class="las la-angle-right"></i></button>
+    </section>
+
+    <section  class="musical-list">
+      <button class="prev-btn"><i class="las la-angle-left"></i></button>
+      <div class="movie-row">
+        <h4 class="movie-genre">Music & Musicals</h4>
+        <div class="movie-container" id="musical-container"></div>
+      </div>     
+      <button class="next-btn"><i class="las la-angle-right"></i></button>
+    </section>
+
+  </main>
+
+  <footer>
+    <ul class="social-bar">
+      <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
+      <li><a href="#"><i class="lab la-instagram"></i></a></li>
+      <li><a href="#"><i class="lab la-twitter"></i></a></li>
+      <li><a href="#"><i class="lab la-youtube"></i></a></li>
+    </ul>
+    <div class="useful-links">
+      <div class="col-1">
+        <li><a href="#">Audio Description</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Legal Notices</a></li>       
+      </div>
+
+      <div class="col-2">
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Cookie Preferences</a></li>
+      </div>
+
+      <div class="col-3">
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Corporate Information</a></li>
+      </div>
+
+      <div class="col-4">
+        <li><a href="#">Media Center</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </div>
+    </div>
+    <a class="service-code" href="#">Service Code</a>
+    <p class="copyright">	&copy; 2022 Netflix Inc.</p>
+  </footer>
+  
+  <script src="./js/scroll.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<main id="main">
+
+  <div class="movie-card">
+    <img src="https://images.unsplash.com/photo-1585951237318-9ea5e175b891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="movie">
+
+    <div class="movie-content">
+      <h4 class="movie-title">Hannibal</h4>
+
+    </div>
+
+    <div class="movie-desc">
+      <h4>Plot</h4>
+      <span class="top-rating">9.8</span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia doloremque distinctio eos tempora quis possimus ex ad recusandae cum?
+    </div>
+  </div>
+
+</main>
+
+.movie-card {
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  margin-top: auto;
+}
+
+.movie-content span {
+  background-color: var(--midnight);
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+  font-size: 0.9rem;
+}
+
+.movie-content span.top-rating {
+  color: springgreen;
+}
+
+.movie-content span.good-rating {
+  color: orange;
+}
+
+.movie-content span.poor-rating {
+  color: red;
+} 
+
+.movie-desc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 1em;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.4s ease;
+}
+
+.movie-card:hover .movie-desc {
+  transform: translateY(0);
+}
