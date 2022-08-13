@@ -1,4 +1,4 @@
 # netflix-clone-JS
 - mobile responsiveness in progress
-Demo
+### Demo
 https://joujou144.github.io/netflix-clone-JS/
