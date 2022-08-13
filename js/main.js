@@ -10,7 +10,7 @@ const SEARCH_URL = BASE_URL+'/search/movie?'+API_KEY
 // Request movies 
 const requests = {
 
-  fetchTrending: `${BASE_URL}/discover/tv?with_genres=10751&${API_KEY}`,
+  fetchTrending: `${BASE_URL}/discover/tv?with_genres=18&${API_KEY}`,
   fetchCrimeMovies: `${BASE_URL}/discover/movie?with_genres=80&${API_KEY}`,
   fetchKidsFamilyMovies: `${BASE_URL}/discover/movie?with_genres=10751&${API_KEY}`,
   fetchHorrorMovies:  `${BASE_URL}/discover/movie?with_genres=27&${API_KEY}`,
